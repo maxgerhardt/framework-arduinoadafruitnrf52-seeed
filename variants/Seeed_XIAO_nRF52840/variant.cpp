@@ -10,18 +10,18 @@ const uint32_t g_ADigitalPinMap[] =
    3,  // D1  is P0.03 (A1)
   28,  // D2  is P0.28 (A2)
   29,  // D3  is P0.29 (A3)
-   4,  // D4  is P0.04 (A4,SDA) 
+   4,  // D4  is P0.04 (A4,SDA)
    5,  // D5  is P0.05 (A5,SCL)
   43,  // D6  is P1.11 (TX)
   44,  // D7  is P1.12 (RX)
   45,  // D8  is P1.13 (SCK)
   46,  // D9  is P1.14 (MISO)
   47,  // D10 is P1.15 (MOSI)
-  
+
   // LEDs
   26,  // D11 is P0.26 (LED RED)
-   6,  // D12 is P0.06 (LED BLUE) 
-  30,  // D13 is P0.30 (LED GREEN) 
+   6,  // D12 is P0.06 (LED BLUE)
+  30,  // D13 is P0.30 (LED GREEN)
   14,  // D14 is P0.14 (READ_BAT)
 
   // LSM6DS3TR
@@ -39,7 +39,7 @@ const uint32_t g_ADigitalPinMap[] =
   13,  // D22 is P0.13 (HICHG)
   17,  // D23 is P0.17 (~CHG)
 
-  // 
+  //
   21,  // D24 is P0.21 (QSPI_SCK)
   25,  // D25 is P0.25 (QSPI_CSN)
   20,  // D26 is P0.20 (QSPI_SIO_0 DI)
@@ -50,9 +50,9 @@ const uint32_t g_ADigitalPinMap[] =
   // NFC
    9,  // D30 is P0.09 (NFC1)
   10,  // D31 is P0.10 (NFC2)
-  
+
   // VBAT
-  31,  // D32 is P0.10 (VBAT)  
+  31,  // D32 is P0.10 (VBAT)
 };
 
 void initVariant()
@@ -60,7 +60,7 @@ void initVariant()
 	pinMode(PIN_QSPI_CS, OUTPUT);
 	digitalWrite(PIN_QSPI_CS, HIGH);
     pinMode(LED_BUILTIN, OUTPUT);
-    digitalWrite(PIN_QSPI_CS, HIGH);
+    digitalWrite(LED_BUILTIN, HIGH);
     pinMode(LED_GREEN, OUTPUT);
     digitalWrite(LED_GREEN, HIGH);
     pinMode(LED_BLUE, OUTPUT);
